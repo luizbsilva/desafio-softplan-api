@@ -1,0 +1,162 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: criacao_tabela_categoria
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v01_criacao_tabela_categoria.sql
+          relativeToChangelogFile: true
+
+  - changeSet:
+      id: inserir_dados_tabela_categoria
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v02_inserir_dados_tabela_categoria.sql
+          relativeToChangelogFile: true
+
+  - changeSet:
+      id: criacao_tabela_pessoa
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v03_criacao_tabela_pessoa.sql
+          relativeToChangelogFile: true
+
+  - changeSet:
+      id: criacao_tabela_ticket
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v05_criacao_tabela_ticket.sql
+          relativeToChangelogFile: true
+
+  - changeSet:
+      id: criacao_tabela_usuario
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v07_criacao_tabela_usuario.sql
+          relativeToChangelogFile: true
+
+  - changeSet:
+      id: criacao_tabela_permissao
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v08_criacao_tabela_permissao.sql
+          relativeToChangelogFile: true  
+
+  - changeSet:
+      id: criacao_tabela_usuario_permissao
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v09_criacao_tabela_permissao_usuario.sql
+          relativeToChangelogFile: true  
+
+  - changeSet:
+      id: inserir_dados_usuario_permissao_e_permissao_usuario
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v10_inserir_dados_usuario_permissao_e_permissao_usuario.sql
+          relativeToChangelogFile: true   
+
+  - changeSet:
+      id: criacao_tabela_contato
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v11_criacao_tabela_contato.sql
+          relativeToChangelogFile: true   
+
+  - changeSet:
+      id: alterar_tabela_ticket
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v13_alterar_tabela_ticket.sql
+          relativeToChangelogFile: true  
+
+  - changeSet:
+      id: criacao_tabela_estado
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v14_criacao_tabela_estado.sql
+          relativeToChangelogFile: true 
+
+  - changeSet:
+      id: inserir_dados_estado
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v15_inserir_dados_estado.sql
+          relativeToChangelogFile: true  
+
+  - changeSet:
+      id: criacao_tabela_municipio
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v16_criacao_tabela_municipio.sql
+          relativeToChangelogFile: true 
+
+  - changeSet:
+      id: inserir_dados_municipio
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v17_inserir_dados_municipio.sql
+          relativeToChangelogFile: true     
+
+  - changeSet:
+      id: alterar_tabela_pessoa
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v18_alterar_tabela_pessoa.sql
+          relativeToChangelogFile: true
+  - changeSet:
+      id: alterar_tabela_usuario
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v19_alterar_tabela_usuario.sql
+          relativeToChangelogFile: true 
+          
+  - changeSet:
+      id: criar_novas_permissoes_e_inserir_novas_permissoes
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v20_criar_novas_permissoes_e_inserir_novas_permissoes.sql
+          relativeToChangelogFile: true                             
+          
+  - changeSet:
+      id: inserir_dados_usuario
+      author: jose.luiz
+      changes:
+      - sqlFile:
+          encoding: utf8
+          path: sqls/v21_inserir_dados_usuario.sql
+          relativeToChangelogFile: true 

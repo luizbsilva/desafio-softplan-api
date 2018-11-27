@@ -1,0 +1,2 @@
+ALTER TABLE usuario ADD COLUMN tipo_usuario VARCHAR(20);
+ALTER TABLE usuario ADD COLUMN ativo BOOLEAN;	

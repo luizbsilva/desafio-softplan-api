@@ -1,0 +1,10 @@
+ALTER TABLE pessoa DROP COLUMN cidade;
+ALTER TABLE pessoa DROP COLUMN estado;
+ALTER TABLE pessoa ADD COLUMN codigo_cidade BIGINT;
+    
+ALTER TABLE pessoa ADD CONSTRAINT fk_pessoa_cidade FOREIGN KEY (codigo_cidade)
+	REFERENCES cidade(codigo)
+	MATCH SIMPLE
+	ON DELETE NO ACTION
+	ON UPDATE NO ACTION
+	NOT DEFERRABLE;
