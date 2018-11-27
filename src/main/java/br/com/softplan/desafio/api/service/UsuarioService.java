@@ -26,19 +26,19 @@ public class UsuarioService {
     }
     
     public Usuario atualizar(final Long codigo, final Usuario pessoa) {
-        final Usuario pessoaSalva = this.buscarPessoaPeloCodigo(codigo);
+        final Usuario pessoaSalva = this.buscarUsuarioPeloCodigo(codigo);
         
         BeanUtils.copyProperties(pessoa, pessoaSalva, "codigo");
         return this.usuarioRepository.save(pessoaSalva);
     }
     
     public void atualizarPropriedadeAtivo(final Long codigo, final Boolean ativo) {
-        final Usuario usuarioSalva = this.buscarPessoaPeloCodigo(codigo);
+        final Usuario usuarioSalva = this.buscarUsuarioPeloCodigo(codigo);
         usuarioSalva.setAtivo(ativo);
         this.usuarioRepository.save(usuarioSalva);
     }
     
-    public Usuario buscarPessoaPeloCodigo(final Long codigo) {
+    public Usuario buscarUsuarioPeloCodigo(final Long codigo) {
         final Optional<Usuario> usuarioSalva = this.usuarioRepository.findById(codigo);
         if (!usuarioSalva.isPresent()) {
             throw new EmptyResultDataAccessException(1);

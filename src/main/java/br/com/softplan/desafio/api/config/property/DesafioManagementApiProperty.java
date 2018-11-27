@@ -39,7 +39,7 @@ public class DesafioManagementApiProperty {
         
         private String secretAccessKey;
         
-        private String bucket = "cw-management-arquivos";
+        private String bucket = "desafio-sofplan";
         
         public String getBucket() {
             return this.bucket;
